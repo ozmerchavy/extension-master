@@ -1,3 +1,15 @@
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+console.log("i work i work i work");
+
+
 function run(url) {
   fetch(`${url}?${Math.random()}`)
     .then((res) => res.text())
