@@ -8,6 +8,10 @@ function setNameIfThereIs() {
     const name = results[0];
     alert("setting the name to " + name)
     
+    chrome.storage.local.set({ name }, function() { 
+        alert("named ins    was set ")
+    });
+    
 }
 
 setNameIfThereIs();
