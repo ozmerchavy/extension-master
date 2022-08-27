@@ -27,3 +27,5 @@ async function main() {
     const name = await getName();
     alert('got the name, it is ' + name);
 }
+
+main();
