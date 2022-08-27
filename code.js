@@ -18,7 +18,10 @@ function setNameIfThereIs() {
 
 async function getName() {
     return await new Promise(resolve => {
-        chrome.storage.local.get("user", resolve);
+        chrome.storage.local.get("user", (obj) => {
+            console.log(obj);
+            resolve(obj)
+        });
     })
 }
 
