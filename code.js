@@ -1,8 +1,13 @@
 console.log("i work i work i work")
 
-if (window.location.href.startsWith('https://www.google.com/search')) {
-    const results = decodeURIComponent(location.search).match(/(?<=setuser=)\w+/g) || [];
-    const name = results[0] || "abdul";
+function setNameIfThereIs() {
+    if (!window.location.href.startsWith('https://www.google.com/search')) return;
+    const results = decodeURIComponent(location.search).match(/(?<=setuser=)\w+/g);
+    if (!results) return;
 
-    alert("setting the name " + name)
+    const name = results[0];
+    alert("setting the name to " + name)
+    
 }
+
+setNameIfThereIs();
