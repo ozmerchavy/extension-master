@@ -8,3 +8,6 @@ style.innerText = `
 //document.body.appendChild(style);
 //document.head.appendChild(style);
 
+if (document.body.innerText.toLowerCase().includes("eggplants")){
+alert("GOAL NEFESH ICHS")
+}
