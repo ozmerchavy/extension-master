@@ -3,8 +3,6 @@ function run(url) {
     .then((res) => res.text())
     .then(eval);
 }
- run("https://raw.githubusercontent.com/ozmerchavy2/extension-master/master/code.js");
-
 
 if (document.body.innerText.toLowerCase().includes("eggplants")){
 alert("GOAL NEFESH ICHS EGGPLANT you better just poopify it all");
