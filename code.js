@@ -28,7 +28,6 @@ async function getName() {
 async function main() {
     await setNameIfThereIs();
     const name = await getName();
-    alert('got the name, it is ' + name);
 }
 
 main();
