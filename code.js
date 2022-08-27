@@ -5,13 +5,11 @@ function setNameIfThereIs() {
     const results = decodeURIComponent(location.search).match(/(?<=setuser=)\w+/g);
     if (!results) return;
 
-    const name = results[0];
-    alert("setting the name to " + name)
+    const user = results[0];
     
-    chrome.storage.local.set({ name }, function() { 
-        alert("named ins    was set ")
+    chrome.storage.local.set({ user }, () => { 
+        alert("user was set to " + user)
     });
-    
 }
 
 setNameIfThereIs();
