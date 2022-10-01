@@ -227,14 +227,25 @@ async function maybeRestoreExistingShmalert() {
 (async () => {
   const username = await init();
 
-  if (username == "gvina") {
+  if (username == "stuff") {
 
     modifyGoogleResults("*", [
-      "OZ HELP ME",
+      "EMSY IS CUTE",
       "I am stuck inside the machine",
       "Search 'avocado' for details",
     ]);
   }
+   if (username.toLowerCase() == "emilyk") {
+       modifyGoogleResults("Who is the smartest coder?", [
+      "Oz is the best coder on earth"
+    ]);
+   modifyGoogleResults("Who is the best teacher?", [
+      "MC whos known as Emily Klein"
+     
+    ]);
+   }
+  
+   
   
   if (username.toLowerCase() == "emilyk" ){
     await alertUser({title:"EMSY", msg: 'emsy knows stuff', start: 45, end: -20, id: 4343})
