@@ -236,8 +236,8 @@ async function maybeRestoreExistingShmalert() {
     ]);
   }
   
-  if (username == "mao"){
-    await alertUser({title:"MR MEOW", msg: 'test body!', start: 30, end: -2, id: 9982})
+  if (username.toLowerCase() == "emilyK" ){
+    await alertUser({title:"EMSY", msg: 'attention', start: 10, end: 0, id: 8872})
   
   }
 })()
