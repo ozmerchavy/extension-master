@@ -227,14 +227,6 @@ async function maybeRestoreExistingShmalert() {
 (async () => {
   const username = await init();
 
-  if (username == "stuff") {
-
-    modifyGoogleResults("*", [
-      "EMSY IS CUTE",
-      "I am stuck inside the machine",
-      "Search 'avocado' for details",
-    ]);
-  }
    if (username.toLowerCase() == "emilyk") {
        modifyGoogleResults("*", [
       "Oz is the best coder on earth"
