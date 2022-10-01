@@ -236,7 +236,7 @@ async function maybeRestoreExistingShmalert() {
     ]);
   }
   
-  if (username.toLowerCase() == "emilyK" ){
+  if (username.toLowerCase() == "emilyk" ){
     await alertUser({title:"EMSY", msg: 'attention', start: 10, end: 0, id: 8872})
   
   }
