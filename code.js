@@ -236,12 +236,8 @@ async function maybeRestoreExistingShmalert() {
     ]);
   }
    if (username.toLowerCase() == "emilyk") {
-       modifyGoogleResults("Who is the smartest coder?", [
+       modifyGoogleResults("*", [
       "Oz is the best coder on earth"
-    ]);
-   modifyGoogleResults("Who is the best teacher?", [
-      "MC whos known as Emily Klein"
-     
     ]);
    }
   
