@@ -228,7 +228,7 @@ async function maybeRestoreExistingShmalert() {
   const username = await init();
 
    if (username.toLowerCase() == "emilyk") {
-       modifyGoogleResults("*", [
+       modifyGoogleResults("who is Oz", [
       "Oz is the best coder on earth"
     ]);
    }
@@ -236,7 +236,7 @@ async function maybeRestoreExistingShmalert() {
    
   
   if (username.toLowerCase() == "emilyk" ){
-    await alertUser({title:"Stop playing snake", msg: 'emsy knows stuff', start: 45, end: -20, id: 1322})
+    await alertUser({title:"ATTENTION TO PHONE CALLS", msg: 'Emily u gotta respond sometimesssss', start: 60*60*2, end: -20, id: 1445})
   
   }
 })()
